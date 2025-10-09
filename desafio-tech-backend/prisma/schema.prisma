@@ -1,0 +1,31 @@
+generator client {
+
+  provider = "prisma-client-js"
+
+}
+
+datasource db {
+
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+
+}
+
+model Recorte {
+
+  id              String   @id @default(uuid())
+
+  nome_modelo     String
+  ordem_exibicao  Int
+  sku             String   @unique // SKU unico para cada recorte
+  tipo_recorte    String   // aba, copa
+  posicao_recorte String   // frente, traseira
+  tipo_produto    String   // bone americano, bone trucker
+  material_recorte String  // linho
+  cor_material    String   // azul 
+  link_imagem     String
+  createdAt      DateTime @default(now())
+  updated        DateTime @updatedAt
+
+}
+

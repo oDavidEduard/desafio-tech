@@ -5,10 +5,13 @@ const express = require("express");
 const { PrismaClient } = require("@prisma/client");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const multer = require("multer");
+const storage = require("./config/cloudinaryConfig");
 const authMiddleware = require("./middleware/authMiddleware");
 const prisma = new PrismaClient();
 
 const app = express();
+const upload = multer({ storage });
 
 app.use(express.json());
 
@@ -85,11 +88,27 @@ app.get("/", (req, res) => {
     res.send("API Funcionando");
 });
 
-app.post("/recortes", authMiddleware, async (req, res) => {
+app.post("/recortes", authMiddleware, upload.single("imagem"), async (req, res) => {
     try {
         
+        const { nome_modelo, ordem_exibicao, sku, tipo_recorte, posicao_recorte, tipo_produto, material_recorte, cor_material } = req.body;
+
+        const link_imagem = req.file.path;
+
+        const ordemInt = parseInt(ordem_exibicao, 10);
+
         const novoRecorte = await prisma.recorte.create({
-            data: req.body,
+            data: {
+                nome_modelo,
+                ordem_exibicao: ordemInt,
+                sku,
+                tipo_recorte,
+                posicao_recorte,
+                tipo_produto
+                ,material_recorte,
+                cor_material,
+                link_imagem,
+            },
         });
 
         res.status(201).json(novoRecorte);

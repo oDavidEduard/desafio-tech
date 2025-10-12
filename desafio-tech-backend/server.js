@@ -1,6 +1,7 @@
 require("dotenv").config();
 
 const express = require("express");
+const cors = require("cors");
 
 const { PrismaClient } = require("@prisma/client");
 const bcrypt = require("bcryptjs");
@@ -11,6 +12,8 @@ const authMiddleware = require("./middleware/authMiddleware");
 const prisma = new PrismaClient();
 
 const app = express();
+app.use(cors());
+app.use(express.json());
 const upload = multer({ storage });
 
 app.use(express.json());

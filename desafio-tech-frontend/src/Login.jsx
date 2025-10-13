@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "./services/api";
-import { Container, Container2, FormWrapper, Title, Button, Input, Subtitle } from "./components/StyledComponents";
+import { Container, Container2, FormWrapper, TitleLogin, ButtonLogin, Input, SubtitleLogin, Subtitle, Logo, LogoLogin } from "./components/StyledComponents";
 import { Link } from 'react-router-dom';
 
 function Login() {
@@ -36,12 +36,12 @@ function Login() {
     return (
         <Container>
             <Container2>
+                <Logo src="/images/Logo.png" alt="Logo"/>
             </Container2>
-
             <FormWrapper>
                 <form onSubmit={handleSubmit}>
-                    <Title>Bem-vindo ao Fanation!</Title>
-                    <Subtitle>Acesse sua conta para começar</Subtitle>
+                    <TitleLogin>Bem-vindo ao Fanation!</TitleLogin>
+                    <SubtitleLogin>Acesse sua conta para começar</SubtitleLogin>
                     <Input
                         type="email"
                         placeholder="E-mail"
@@ -55,7 +55,7 @@ function Login() {
                         onChange={(e) => setPassword(e.target.value)}
                         required/>
 
-                    <Button type="submit">Entrar</Button>
+                    <ButtonLogin type="submit">Acessar</ButtonLogin>
 
                     <Subtitle style={{ marginTop: "20px"}}><Link to="/register">Ainda não tem conta? </Link></Subtitle>
 

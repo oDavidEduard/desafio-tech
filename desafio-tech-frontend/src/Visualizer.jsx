@@ -1,8 +1,14 @@
+import { useState, useEffect } from "react";
+import api from "./services/api";
+import { Link } from "react-router-dom";
+import { ActionButton, DashboardContainer, StyledTable, Button, Container2, Title2, Logo } from "./components/StyledComponents";
+
+
 function Login() {
     return (
-        <div>
-            <h1>Pagina de Visualizer</h1>
-        </div>
+        <Container2>
+            <Logo src="/images/Logo.png" alt="Logo" />
+        </Container2>
     )
 }
 

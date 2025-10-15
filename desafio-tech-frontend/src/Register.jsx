@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "./services/api";
-import { Container, Container2, FormWrapper, Title, Button, Input, Subtitle } from "./components/StyledComponents";
+import { Container, Container2, FormWrapper, Title, Button, Input, Subtitle, Logo } from "./components/StyledComponents";
 import { Link } from 'react-router-dom';
 
 function Register(){
@@ -30,6 +30,7 @@ function Register(){
     return (
         <Container>
             <Container2>
+                <Logo src="/images/Logo.png" alt="Logo" />
             </Container2>
 
             <FormWrapper>

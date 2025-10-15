@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import api from "./services/api";
 import { Link } from "react-router-dom";
 import { ActionButton, DashboardContainer, StyledTable, Button, Container2, Title2, Logo } from "./components/StyledComponents";
+import LogoutButton from "./components/LogoutButton";
 
 function Dashboard() {
 
@@ -57,8 +58,9 @@ function Dashboard() {
                 <Logo src="./public/images/Logo.png" alt="Logo"/>
             </Container2>
             <Title2 style={{ fontSize: '2rem', marginBottom: '20px' }}>Peças gerais</Title2>
+            <br />
             <Button as={Link} to="/recortes/novo">Adicionar peça</Button>
-
+            <br /><br />
             <StyledTable>
                 <thead>
                     <tr>

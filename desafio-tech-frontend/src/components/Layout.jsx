@@ -1,5 +1,7 @@
-import { Outlet, NavLink } from 'react-router-dom';
+import { Outlet, NavLink, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import api from "../services/api";
+import LogoutButton from "./LogoutButton";
 
 const AppContainer = styled.div`
     display:flex;
@@ -32,6 +34,7 @@ const StyledNavLink = styled(NavLink)`
     padding:10px;
     border-radius:4px;
     font-family: "Montserrat", sans-serif;
+    transition: all 0.2s;
 
     &.active {
     background-color: #440986;
@@ -51,7 +54,9 @@ const MainContent = styled.main`
     overflow-y:auto;
 `;
 
+
 function Layout() {
+
     return (
         <AppContainer>
             <Sidebar>
@@ -66,6 +71,7 @@ function Layout() {
                         </NavItem>
                     </NavList>
                 </nav>
+                                <LogoutButton />
             </Sidebar>
             <MainContent>
                 <Outlet />

@@ -5,6 +5,7 @@ import Modal from "react-modal";
 
 import "./index.css";
 import Layout from "./components/Layout";
+import Route from "./components/Route";
 import Login from "./Login";
 import Dashboard from "./Dashboard";
 import Visualizer from "./Visualizer";
@@ -21,7 +22,10 @@ const router = createBrowserRouter([
 
   {
     path: "/",
-    element: <Layout />,
+    element: (
+      <Route>
+      <Layout />
+      </Route> ),
     children: [
       {
         index:true,

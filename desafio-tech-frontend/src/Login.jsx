@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "./services/api";
 import { Container, Container2, FormWrapper, TitleLogin, ButtonLogin, Input, SubtitleLogin, Subtitle, Logo, LogoLogin } from "./components/StyledComponents";
@@ -9,6 +9,13 @@ function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
+
+    useEffect(() => {
+        const token = localStorage.getItem("authToken");
+        if (token) {
+            navigate("/");
+        }
+    }, [navigate]);
 
     const handleSubmit = async (event) => {
         event.preventDefault();

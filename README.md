@@ -81,7 +81,7 @@ Certifique-se de ter instalado:
 
 ---
 
-### 1. Clonar o Repositório
+### 1️⃣ Clonar o Repositório
 
 ```bash
 git clone https://github.com/oDavidEduard/desafio-tech.git
@@ -90,7 +90,7 @@ cd desafio-tech
 
 ---
 
-### 2. Configurar o Backend
+### 2️⃣ Configurar o Backend
 
 ```bash
 cd desafio-tech-backend
@@ -128,7 +128,7 @@ npm run dev
 
 ---
 
-### 3. Configurar o Frontend
+### 3️⃣ Configurar o Frontend
 
 ```bash
 cd ../desafio-tech-frontend
@@ -147,12 +147,12 @@ npm run dev
 ![GIF](./desafio-tech-frontend/src/assets/gif/Register.gif)
 
 - Dashboard e Visualizer
+
 ![GIF2](./desafio-tech-frontend/src/assets/gif/GIF%20Dashboard%20e%20Visualizer.gif)
 
 ### 👨‍💻 Autor
 
-Feito por David Nunes 🚀
-
+Feito por David Nunes 🚀 <br />
 📧 Email: davideduard227@gmail.com
 
 🐙 GitHub: @oDavidEduard

@@ -144,11 +144,11 @@ npm run dev
 
 - Login e Cadastro
 
-![GIF Registro e Login](assets/gif/Register.gif)
+![GIF](./desafio-tech-frontend/src/assets/gif/Register.gif)
 
 ### 👨‍💻 Autor
 
-Feito com por David Nunes 🚀
+Feito por David Nunes 🚀
 📧 Email: davideduard227@gmail.com
 
 🐙 GitHub: @oDavidEduard

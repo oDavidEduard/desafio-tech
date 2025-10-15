@@ -5,8 +5,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/oDavidEduard/desafio-tech"><img src="https://img.shields.io/github/stars/oDavidEduard/desafio-tech?style=for-the-badge" alt="Stars"></a>
-  <a href="https://github.com/oDavidEduard/desafio-tech"><img src="https://img.shields.io/github/forks/oDavidEduard/desafio-tech?style=for-the-badge" alt="Forks"></a>
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
   <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
@@ -26,25 +24,25 @@ O sistema permite **cadastrar, editar, excluir e visualizar recortes**, que são
 
 ## ✨ Funcionalidades Principais
 
-- **Autenticação Segura**  
+1. **Autenticação Segura**  
 - Sistema de registro e login com **senhas criptografadas** e **JWT (JSON Web Tokens)**.
 
-- **Gerenciamento Completo (CRUD)**  
+2. **Gerenciamento Completo (CRUD)**  
 - **Criar:** Cadastrar novos recortes com upload de imagem para a nuvem.  
 - **Ler:** Listar todas as peças cadastradas em um dashboard.  
 - **Atualizar:** Editar informações de uma peça existente.  
 - **Deletar:** Excluir uma peça e a imagem associada na nuvem.
 
-- **Armazenamento na Nuvem**  
+3. **Armazenamento na Nuvem**  
 - Integração com **Cloudinary** para upload e gerenciamento de imagens.
 
-- **Rotas Protegidas**  
+4. **Rotas Protegidas**  
 - Acesso ao painel e funcionalidades apenas para usuários autenticados.
 
-- **Ferramenta de Visualização**  
+5. **Ferramenta de Visualização**  
 - Interface interativa que **sobrepõe camadas (z-index)** para formar o produto final em tempo real.
 
-- **Interface Reativa e Moderna**  
+6. **Interface Reativa e Moderna**  
 - Construída com **React + Vite**, garantindo navegação fluida e responsiva.
 
 ---

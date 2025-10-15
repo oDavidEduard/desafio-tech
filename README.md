@@ -146,9 +146,12 @@ npm run dev
 
 ![GIF](./desafio-tech-frontend/src/assets/gif/Register.gif)
 
+- Dashboard e Visualizer
+![GIF2](./desafio-tech-frontend/src/assets/gif/GIF%20Dashboard%20e%20Visualizer.gif)
+
 ### 👨‍💻 Autor
 
-Feito por David Nunes 🚀
+Feito por David Nunes 🚀 <br />
 📧 Email: davideduard227@gmail.com
 
 🐙 GitHub: @oDavidEduard

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "./services/api";
-import { Container, Container2, FormWrapper, TitleLogin, ButtonLogin, Input, SubtitleLogin, Subtitle, Logo, LogoLogin } from "./components/StyledComponents";
+import { Container, Container2, FormWrapper, Title, ButtonLogin, Input, SubtitleLogin, Subtitle, Logo, LogoLogin } from "./components/StyledComponents";
 import { Link } from 'react-router-dom';
 
 function Login() {
@@ -47,7 +47,7 @@ function Login() {
             </Container2>
             <FormWrapper>
                 <form onSubmit={handleSubmit}>
-                    <TitleLogin>Bem-vindo ao Fanation!</TitleLogin>
+                    <Title>Bem-vindo ao Fanation!</Title>
                     <SubtitleLogin>Acesse sua conta para começar</SubtitleLogin>
                     <Input
                         type="email"

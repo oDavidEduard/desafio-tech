@@ -38,7 +38,6 @@ function Visualizer() {
     <div>
     <Container2>
         <Logo src="/images/Logo.png" alt="Logo" />
-        <LogoutButton />
     </Container2>
       <br />
       <Title2 style={{ marginBottom: '20px' }}>Ferramenta de Montagem</Title2>

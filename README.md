@@ -26,25 +26,25 @@ O sistema permite **cadastrar, editar, excluir e visualizar recortes**, que são
 
 ## ✨ Funcionalidades Principais
 
-✅ **Autenticação Segura**  
+- **Autenticação Segura**  
 - Sistema de registro e login com **senhas criptografadas** e **JWT (JSON Web Tokens)**.
 
-✅ **Gerenciamento Completo (CRUD)**  
+- **Gerenciamento Completo (CRUD)**  
 - **Criar:** Cadastrar novos recortes com upload de imagem para a nuvem.  
 - **Ler:** Listar todas as peças cadastradas em um dashboard.  
 - **Atualizar:** Editar informações de uma peça existente.  
 - **Deletar:** Excluir uma peça e a imagem associada na nuvem.
 
-✅ **Armazenamento na Nuvem**  
+- **Armazenamento na Nuvem**  
 - Integração com **Cloudinary** para upload e gerenciamento de imagens.
 
-✅ **Rotas Protegidas**  
+- **Rotas Protegidas**  
 - Acesso ao painel e funcionalidades apenas para usuários autenticados.
 
-✅ **Ferramenta de Visualização**  
+- **Ferramenta de Visualização**  
 - Interface interativa que **sobrepõe camadas (z-index)** para formar o produto final em tempo real.
 
-✅ **Interface Reativa e Moderna**  
+- **Interface Reativa e Moderna**  
 - Construída com **React + Vite**, garantindo navegação fluida e responsiva.
 
 ---
@@ -81,7 +81,7 @@ Certifique-se de ter instalado:
 
 ---
 
-### 1️⃣ Clonar o Repositório
+### 1. Clonar o Repositório
 
 ```bash
 git clone https://github.com/oDavidEduard/desafio-tech.git
@@ -90,7 +90,7 @@ cd desafio-tech
 
 ---
 
-### 2️⃣ Configurar o Backend
+### 2. Configurar o Backend
 
 ```bash
 cd desafio-tech-backend
@@ -128,7 +128,7 @@ npm run dev
 
 ---
 
-### 3️⃣ Configurar o Frontend
+### 3. Configurar o Frontend
 
 ```bash
 cd ../desafio-tech-frontend
@@ -151,7 +151,8 @@ npm run dev
 
 ### 👨‍💻 Autor
 
-Feito por David Nunes 🚀 <br />
+Feito por David Nunes 🚀
+
 📧 Email: davideduard227@gmail.com
 
 🐙 GitHub: @oDavidEduard

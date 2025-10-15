@@ -22,8 +22,6 @@ O objetivo era criar uma aplicação completa (**Frontend + Backend**) para gere
 
 O sistema permite **cadastrar, editar, excluir e visualizar recortes**, que são **combinados em tempo real** para formar o modelo final, respeitando a **ordem de camadas (z-index)**.
 
-> 💡 Este projeto demonstra domínio do ecossistema web moderno — da criação de uma **API RESTful segura** à construção de uma **interface reativa e intuitiva com React**.
-
 ---
 
 ## ✨ Funcionalidades Principais
@@ -88,16 +86,20 @@ Certifique-se de ter instalado:
 ```bash
 git clone https://github.com/oDavidEduard/desafio-tech.git
 cd desafio-tech
+```
 
 ---
 
 ### 2️⃣ Configurar o Backend
 
+```bash
 cd desafio-tech-backend
 npm install
+```
 
 - Crie um arquivo .env na raiz do backend com o seguinte conteúdo:
 
+```bash
 # Configuração do Banco de Dados PostgreSQL
 DATABASE_URL="postgresql://USUARIO:SENHA@localhost:5432/desafio_tech?schema=public"
 
@@ -108,14 +110,19 @@ JWT_SECRET="SUA_CHAVE_SECRETA"
 CLOUDINARY_CLOUD_NAME="SEU_CLOUD_NAME"
 CLOUDINARY_API_KEY="SUA_API_KEY"
 CLOUDINARY_API_SECRET="SEU_API_SECRET"
+```
 
 - Rode as migrations do Prisma para criar as tabelas:
 
+```bash
 npx prisma migrate dev
+```
 
 - Inicie o servidor backend:
 
+```bash
 npm run dev
+```
 
 🟢 O servidor estará disponível em: http://localhost:3001
 
@@ -123,9 +130,11 @@ npm run dev
 
 ### 3️⃣ Configurar o Frontend
 
+```bash
 cd ../desafio-tech-frontend
 npm install
 npm run dev
+```
 
 🟢 A aplicação React estará rodando em: http://localhost:5173
 
@@ -133,7 +142,9 @@ npm run dev
 
 ### 🎬 Preview do Projeto
 
+- Login e Cadastro
 
+![GIF Registro e Login](assets/gif/Register.gif)
 
 ### 👨‍💻 Autor
 
